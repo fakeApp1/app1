@@ -14,4 +14,9 @@ bui.ready(function () {
         children: ".bui-tab-main > ul",
         scroll: true
     });
+    var uiSlide = bui.slide({
+        id: "#slide",
+        height: 200,
+        zoom: true
+    });
 });

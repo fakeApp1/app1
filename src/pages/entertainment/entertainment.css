@@ -158,6 +158,14 @@ header.bui-bar {
 .tips div:nth-child(2) span:nth-child(1) i{
     margin-right: .1rem;
 }
+.bui-slide>.bui-slide-head {
+    text-align: center;
+}
+.bui-slide>.bui-slide-head ul li {
+    width: 0.2rem;
+    height: 0.05rem;
+    border-radius: 0;
+}
 
 
 
