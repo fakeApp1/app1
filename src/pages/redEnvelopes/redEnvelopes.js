@@ -41,7 +41,13 @@ bui.ready(function() {
         })
         //点击跳转
     $(".jump").on("click", function(e) {
-        bui.load({ url: "pages/chat/chat.html" });
+            bui.load({ url: "/pages/chat/chat.html" });
+        })
+        //红包记录跳转
+    $('.redRecord').on("click", function(e) {
+        console.log(111);
+
+        bui.load({ url: "/pages/redRecord/redRecord.html" });
     })
 
     //返回

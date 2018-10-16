@@ -16,7 +16,10 @@ pageview.bind = function() {
     $btnSend.on("click", function(e) {
         var val = $chatInput.val();
         var tpl = chatTpl(val);
-
+        console.log($('#pagemain')[0].scrollHeight);
+        console.log($('#pagemain').scrollTop());
+        $('#pagemain').scrollTop($('#pagemain')[0].scrollHeight);
+        console.log($('#pagemain').scrollTop());
         if (!$(this).hasClass("disabled")) {
             $chatPanel.append(tpl);
             $chatInput.val('');
@@ -106,7 +109,6 @@ var chatTpl = function(con, type) {
 bui.ready(function() {
     // 业务逻辑需要在这里写
     pageview.init();
-
     //弹出红包框
     var dialog = bui.dialog({ id: "#dialog3" });
     $('.leftN').on("click", function() { dialog.open() })
