@@ -13,4 +13,7 @@ bui.ready(function () {
     $("#jumpEntertainment").on("click", function (e) {
         bui.load({ url: "pages/entertainment/entertainment.html" });
     });
+    $("#jumpGroupDetail").on("click", function (e) {
+        bui.load({ url: "pages/jumpGroupDetail/jumpGroupDetail.html" });
+    });
 });
